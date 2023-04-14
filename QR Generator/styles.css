@@ -113,8 +113,8 @@ opacity: 0.8;
 }
 
 #blur {
-height: 200vh;
-width: 200vw;
+height: 125vh;
+width: 125vw;
 position: absolute;
 z-index: 2;
 backdrop-filter: blur(12vmax);
