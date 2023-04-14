@@ -13,6 +13,8 @@
 
 ![](https://github.com/21R01A7263/QR_gen-project/blob/main/assets/preview.gif)
 
+<br>
+Utility is designed for desktops only [currently].
 <hr>
 <h3><em>References and Sources</em></h3>
 <br>
