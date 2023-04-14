@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+body {
+    display: grid;
+    height: 100vh;
+    background-color: black;
+    margin: 0rem;
+    overflow: hidden;
+  }
+  
+h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(1.6rem, 5vw, 3.3rem);
+    color: white;
+    white-space: nowrap;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+    margin: 0rem;
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    translate: -50% -50%;
+    z-index: 4;
+}
+
+.wrap{
+    z-index: 3;
+    padding-left: 30vh;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap textarea{
+    height: 250px;
+    border-radius: 20px;
+    outline: none;
+    resize: none;
+    font-size: 24px;
+    border: none;
+    background-color: #202637;
+    font-family: "Poppins";
+    font-weight: 400;
+    color: aliceblue;
+    padding: 40px 40px;
+    width: 300px;
+    opacity: 0.5;
+    box-shadow: 20px 20px 25px 0 rgba(0, 0, 0, 0.9);
+    margin-top: 30vh;
+}
+
+.wrap img{
+    max-width: 250px;
+    max-height: 250px;
+    z-index: 3;
+    display: flex;
+    margin-top: 34vh;
+    box-shadow: 23px 23px 32px 0 rgba(0, 0, 0, 0.7);;
+}
+
+textarea::placeholder
+{
+    position: absolute;
+    left: 0;
+    padding: 0px 40px;
+    color: rgb(240, 248, 255, 0.6);
+    opacity: 1.0;
+}
+
+
+textarea :is(:focus, :valid){
+    border-color: white;
+}
+
+textarea::-webkit-scrollbar{
+    width: 0px;
+}
+
+h1:hover {
+background-color: rgb(255, 255, 255, 0.95);
+color: black;
+box-shadow: 19px 15px 24px 0 rgba(0, 0, 0, 0.8);
+}
+
+@keyframes rotate {
+from {
+    rotate: 0deg;
+}
+
+50% {
+    scale: 1 1.5;
+}
+
+to {
+    rotate: 360deg;
+}
+}  
+
+#blob {
+background-color: white;
+height: 28vmax;
+aspect-ratio: 1;
+position: absolute;
+left: 50%;
+top: 30vh;
+translate: -50% -50%;
+border-radius: 50%;
+background: linear-gradient(to right, rgb(43, 98, 192), rgb(168, 16, 143));
+animation: rotate 20s infinite;
+opacity: 0.8;
+}
+
+#blur {
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: 2;
+backdrop-filter: blur(12vmax);
+}
+
+button
+{
+    width: 150px;
+    height: 50px;
+    z-index: 4;
+    margin-top: 6vh;
+    margin-left: 47vw;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    justify-content: center;
+    
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255, 0.95);
+    color: black;
+    box-shadow: 12px 12px 29px 0 rgba(0, 0, 0, 0.8);
+}
+
+h3{
+    z-index: 5;
+    max-height: 20px;
+    max-width: 50px;
+    min-height: 19px;
+    min-width: 49px;
+}
+
+
+
+
