@@ -7,9 +7,12 @@
 </p>
 <br>
 
-<h2 align="center">Preview</h2>
-<a href="https://qr-gen-ten.vercel.app/" alt="Version 1.1" ><p align="center">Visit Site</p></a>
+<p><h2>Preview</h2> <a href="https://qr-gen-ten.vercel.app/" alt="Version 1.1" ><p >Visit Site</p></a></p>
+
 <br>
+
+![](https://github.com/21R01A7263/QR_gen-project/blob/main/assets/preview.gif)
+
 <hr>
 <h3><em>References and Sources</em></h3>
 <br>
