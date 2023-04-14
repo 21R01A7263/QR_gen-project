@@ -7,7 +7,7 @@
 </p>
 <br>
 
-<p><h2>Preview</h2> <a href="https://qr-gen-ten.vercel.app/" alt="Version 1.1" ><p >Visit Site</p></a></p>
+<p><h2>Preview</h2> <a href="https://qr-gen-7263.vercel.app/" alt="Version 1.1" ><p >Visit Site</p></a></p>
 
 <br>
 
