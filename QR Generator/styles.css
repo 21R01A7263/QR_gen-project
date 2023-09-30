@@ -1,39 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
-
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 body {
     display: grid;
     height: 100vh;
     background-color: black;
     margin: 0rem;
-    overflow: hidden;
   }
   
+.wrap{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
 h1 {
     font-family: 'Space Mono', monospace;
     font-size: clamp(1.6rem, 5vw, 3.3rem);
     color: white;
+    text-align: center;
     white-space: nowrap;
-    padding: 0rem clamp(1rem, 2vw, 3rem);
     border-radius: clamp(0.4rem, 0.75vw, 1rem);
-    margin: 0rem;
-    position: absolute;
-    left: 50%;
-    top: 12%;
-    translate: -50% -50%;
     z-index: 4;
 }
 
-.wrap{
-    z-index: 3;
-    padding-left: 30vh;
-    width: 1000px;
-    height: 500px;
+.wrap-content{
+    padding-block: 2rem;
+    align-items: center;
     display: flex;
-    justify-content: space-between;
+    gap: 3rem;
 }
-
-.wrap textarea{
+.wrap-content textarea{
     height: 250px;
     border-radius: 20px;
     outline: none;
@@ -45,18 +50,16 @@ h1 {
     font-weight: 400;
     color: aliceblue;
     padding: 40px 40px;
-    width: 300px;
+    max-width: 20rem;
     opacity: 0.5;
     box-shadow: 20px 20px 25px 0 rgba(0, 0, 0, 0.9);
-    margin-top: 30vh;
 }
 
-.wrap img{
+.wrap-content img{
     max-width: 250px;
     max-height: 250px;
     z-index: 3;
     display: flex;
-    margin-top: 34vh;
     box-shadow: 23px 23px 32px 0 rgba(0, 0, 0, 0.7);;
 }
 
@@ -113,9 +116,9 @@ opacity: 0.8;
 }
 
 #blur {
-height: 125vh;
-width: 125vw;
-position: absolute;
+min-height: 100vh;
+min-width: 100vw;
+position: fixed;
 z-index: 2;
 backdrop-filter: blur(12vmax);
 }
@@ -125,8 +128,6 @@ button
     width: 150px;
     height: 50px;
     z-index: 4;
-    margin-top: 6vh;
-    margin-left: 47vw;
     align-items: center;
     background: transparent;
     border: 0;
@@ -157,6 +158,17 @@ h3{
     min-width: 49px;
 }
 
-
+@media (max-width:648px)
+{
+    html{
+        overflow-y: scroll;
+    }
+    .wrap-content{
+        flex-direction: column-reverse;
+    }
+    .wrap-content textarea{
+        max-width: 40%;
+    }
+}
 
 

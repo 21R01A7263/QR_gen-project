@@ -9,14 +9,16 @@
         <link rel="stylesheet" href="./styles.css" type="text/css">
     </head>
     <body>
-        <h1 data-value="QR CODE GENERATOR">QR CODE GENERATOR</h1>
         <div class="wrap">
-            <textarea placeholder="Enter Content" id="mytext"></textarea>
-            <div class="box with-border">
-                <img src="" id="myimg">
+            <h1 data-value="QR CODE GENERATOR">QR CODE GENERATOR</h1>
+            <div class="wrap-content">
+                <textarea placeholder="Enter Content" id="mytext"></textarea>
+                <div class="box with-border">
+                    <img src="" id="myimg">
+                </div>
             </div>
+            <button data-value="R01A7263" onclick="genQR()">GENERATE</button>
         </div>
-        <button data-value="R01A7263" onclick="genQR()">GENERATE</button>
         <div id="blob"></div>
         <div id="blur"></div>
 
