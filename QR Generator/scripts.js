@@ -66,7 +66,7 @@ window.onpointermove = event => {
 
 function genQR()
         {
-            var gapi="https://chart.googleapis.com/chart?cht=qr&chs=350x350&chl=";
+            var gapi="https://quickchart.io/chart?cht=qr&chs=350x350&chl=";
             var myimg=document.getElementById("myimg");
             var mytext=document.getElementById("mytext").value;
 
