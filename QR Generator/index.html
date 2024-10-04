@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>QR Code Generator</title>
-    <meta name="description" content="QR Code Generator" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./styles.css" type="text/css" />
-  </head>
-  <body>
-    <h1 data-value="QR CODE GENERATOR">QR CODE GENERATOR</h1>
-    <div class="wrap">
-      <textarea placeholder="Enter Content" id="mytext"></textarea>
-      <div class="box with-border">
-        <img src="" id="myimg" />
-      </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced QR Code Generator</title>
+    <meta name="description" content="Generate QR codes easily with this interactive tool">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title" data-value="QR CODE GENERATOR">QR CODE GENERATOR</h1>
+        <div class="content-wrapper">
+            <div class="input-section">
+                <textarea id="qr-content" placeholder="Enter content for QR code" aria-label="QR code content"></textarea>
+                <button id="generate-btn" class="generate-btn" data-value="GENERATE">
+                    <i class="fas fa-qrcode"></i> GENERATE
+                </button>
+            </div>
+            <div class="output-section">
+                <div class="qr-container">
+                    <img id="qr-image" src="" alt="Generated QR Code" />
+                </div>
+                <button id="download-btn" class="download-btn" disabled>
+                    <i class="fas fa-download"></i> DOWNLOAD
+                </button>
+            </div>
+        </div>
     </div>
-    <div class="btn">
-      <button data-value="GENERATE" onclick="genQR()">GENERATE</button>
-    </div>
-    <div id="blob"></div>
-    <div id="blur"></div>
-
-    <script src="./scripts.js" async defer></script>
-  </body>
+    <div id="blob" class="blob"></div>
+    <div id="blur" class="blur"></div>
+    <script src="scripts.js"></script>
+</body>
 </html>
